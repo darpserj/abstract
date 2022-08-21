@@ -1,0 +1,108 @@
+:root {
+  --dark-blue: #4C5FD5;
+  --light-blue: #dadbf1;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.search {
+  padding: 6rem 1rem;
+  margin: auto;
+  background-color: var(--light-blue);
+}
+
+.search-wrapper {
+  max-width: 50.25rem;
+  margin: auto;
+}
+
+.search-heading {
+  margin-bottom: 0.1em;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 400;
+  text-align: center;
+}
+
+.search-label {
+  position: relative;
+}
+
+.search-label svg {
+  position: absolute;
+  top: 1.25rem;
+  right: 1rem;
+  z-index: 2;
+}
+
+.search-input {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 4rem;
+  padding: 1rem;
+  margin: auto;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.search-input::-moz-placeholder {
+  font-size: 1.25rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.search-input:-ms-input-placeholder {
+  font-size: 1.25rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.search-input::placeholder {
+  font-size: 1.25rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.features {
+  --n: 2; /* The maximum number of columns */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(250px, 100% / var(--n)), 2fr));
+  max-width: 80rem;
+  padding: 1rem;
+  margin: 8rem auto;
+}
+
+.feature {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.feature-icon {
+  max-width: 100%;
+  height: auto;
+  max-height: 120px;
+}
+
+.feature-heading {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.feature-paragraph {
+  display: block;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.feature-link {
+  display: block;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
