@@ -42,8 +42,8 @@
 }
 
 .search-input {
-  position: relative;
   display: block;
+  position: relative;
   width: 100%;
   height: 4rem;
   padding: 1rem;

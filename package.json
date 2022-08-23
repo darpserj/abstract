@@ -1,8 +1,27 @@
 {
+  "name": "abstract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darpserj/abstract.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darpserj/abstract/issues"
+  },
+  "homepage": "https://github.com/darpserj/abstract#readme",
   "devDependencies": {
-    "postcss": "^8.4.16",
-    "postcss-scss": "^4.0.4",
-    "stylelint": "^14.10.0",
+    "stylelint": "^14.11.0",
     "stylelint-config-recess-order": "^3.0.0"
+  },
+  "dependencies": {
+    "postcss": "^8.4.16",
+    "postcss-scss": "^4.0.4"
   }
 }
