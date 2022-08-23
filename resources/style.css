@@ -42,8 +42,8 @@
 }
 
 .search-input {
-  display: block;
   position: relative;
+  display: block;
   width: 100%;
   height: 4rem;
   padding: 1rem;
@@ -105,4 +105,44 @@
 .feature-link {
   display: block;
   font-size: 1.5rem;
+}
+
+.footer {
+  color: white;
+  background-color: black;
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /*         gap: 3rem;
+   */
+  max-width: 100rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  margin: auto;
+}
+
+.footer-special {
+  grid-column: span 2;
+  align-self: end;
+  justify-self: end;
+  padding-top: 3rem;
+}
+
+.footer-heading {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.footer-list {
+  display: block;
+  list-style-type: none;
+}
+
+.footer-link {
+  display: block;
+  color: white;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
