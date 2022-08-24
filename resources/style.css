@@ -12,6 +12,121 @@
   line-height: 1.5;
 }
 
+/* Navbar */
+.header {
+  display: flex;
+  align-items: center;
+  min-height: 5.5rem;
+  color: white;
+  background-color: #111;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 75rem;
+  padding: 1rem;
+  margin: auto;
+}
+
+.nav-logo-wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-text, .nav-text strong {
+  font-size: 1.5rem;
+}
+
+.nav-hamburger {
+  margin-left: auto;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+@media (min-width: 768px) {
+  .nav-hamburger {
+    display: none;
+  }
+}
+
+.nav-list {
+  display: none;
+}
+@media (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+}
+.nav-list.active {
+  position: absolute;
+  top: 5.5rem;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  padding: 2.5rem;
+  margin: auto;
+  margin-left: -1rem;
+  list-style-type: none;
+  background-color: #111;
+}
+
+.active .nav-item {
+  display: block;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: auto;
+}
+
+.active .nav-item .nav-link {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+
+.nav-ruler {
+  width: 14rem;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .nav-ruler {
+    display: none;
+  }
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+}
+
+.request {
+  padding: 0.5rem 1rem;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.signin {
+  padding: 0.5rem 2rem;
+  background-color: var(--dark-blue);
+  border-radius: 5px;
+}
+
 .search {
   padding: 6rem 1rem;
   margin: auto;
@@ -38,7 +153,7 @@
   position: absolute;
   top: 1.25rem;
   right: 1rem;
-  z-index: 2;
+  z-index: 1;
 }
 
 .search-input {
