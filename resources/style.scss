@@ -167,12 +167,17 @@
     }
         .feature{
             display: flex;
+            align-items: flex-start;
+            justify-self: start;
             margin-bottom: 4rem;
         }
+
+            .icon-wrapper{
+                max-width: 120px;
+            }
             .feature-icon{
-                max-width: 100%;
-                height: auto;
-                max-height: 120px;
+                display: block;
+                width: 100%;
             }
             .feature-list{}
                 .feature-heading{
@@ -187,6 +192,13 @@
                 .feature-link{
                     display: block; 
                     font-size: 1.5rem;
+                    font-weight: 300;
+                    color: var(--dark-blue);
+                    text-decoration: none;
+                }
+                .feature-link::after{
+                    vertical-align: middle;
+                    content: '\2192';
                 }
 
 .footer{
