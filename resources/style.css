@@ -220,7 +220,7 @@
 .feature-paragraph {
   display: block;
   margin: 1rem 0;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 .feature-link {
